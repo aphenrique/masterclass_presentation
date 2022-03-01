@@ -26,3 +26,15 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: montserrat
+      fonts:
+        - asset: fonts/montserrat/Montserrat-Regular.ttf
+    
+    - family: poppins
+      fonts:
+        - asset: fonts/poppins/Poppins-SemiBold.ttf
