@@ -26,7 +26,7 @@ class _SplashPageState extends State<SplashPage> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(56.0),
-          child: Image.asset(AppImages.logo),
+          child: Image.asset(AppImages.splashLogo),
         ),
       ),
     );
