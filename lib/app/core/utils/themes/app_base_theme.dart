@@ -6,12 +6,26 @@ class AppBaseTheme {
   /// Base styles
   static const textH1 = TextStyle(
     fontFamily: 'poppins',
+    fontWeight: FontWeight.w600,
     fontSize: 20,
   );
 
   static const textH2 = TextStyle(
     fontFamily: 'poppins',
+    fontWeight: FontWeight.w600,
     fontSize: 16,
+  );
+
+  static const textH3 = TextStyle(
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.normal,
+    fontSize: 14,
+  );
+
+  static const textH4 = TextStyle(
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.normal,
+    fontSize: 12,
   );
 
   static const bodyText1 = TextStyle(
