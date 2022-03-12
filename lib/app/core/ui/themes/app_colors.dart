@@ -25,4 +25,14 @@ class AppColors {
   static const darkBackground = Color(0XFF121517);
 
   static const darkIcon = Color(0XFFEDF4F8);
+
+  static const lightHighlight = Color(0XFF172026);
+
+  static const lightDescription = Color(0XFF51565A);
+
+  static const lightCard = Color(0XFFEDF4F8);
+
+  static const lightBackground = Color(0XFFD6DFE4);
+
+  static const lightIcon = Color(0XFF172026);
 }
