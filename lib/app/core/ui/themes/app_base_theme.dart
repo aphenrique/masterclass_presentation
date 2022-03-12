@@ -38,12 +38,17 @@ class AppBaseTheme {
     fontSize: 12,
   );
 
-  static final buttonStyle = ButtonStyle(
-    textStyle: MaterialStateProperty.all<TextStyle>(
-      const TextStyle(color: Colors.white),
-    ),
-    shape: MaterialStateProperty.all<OutlinedBorder>(
-      RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+  static final buttonTheme = ElevatedButtonThemeData(
+    style: ButtonStyle(
+      textStyle: MaterialStateProperty.all<TextStyle>(
+        const TextStyle(color: Colors.white),
+      ),
+      shape: MaterialStateProperty.all<OutlinedBorder>(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      ),
+      minimumSize: MaterialStateProperty.all<Size>(
+        const Size(120, 40),
+      ),
     ),
   );
 }
