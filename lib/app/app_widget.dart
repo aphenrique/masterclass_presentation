@@ -12,6 +12,7 @@ class AppWidget extends StatelessWidget {
       valueListenable: themeStore,
       builder: (_, __, ___) {
         return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter Slidy',
           theme: themeStore.theme,
           routeInformationParser: Modular.routeInformationParser,
