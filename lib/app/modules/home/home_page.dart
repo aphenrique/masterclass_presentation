@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass_presentation/app/modules/activities/domain/usecases/get_activities_usecase.dart';
+import 'package:masterclass_presentation/app/modules/activities/presenter/widgets/activity_card_widget.dart';
+
 import '../../core/components/theme_changer_component.dart';
 import '../../core/ui/images/app_images.dart';
 
@@ -10,6 +13,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final activities = GetActivitiesUsecaseImpl().getActivities();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,8 +32,12 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: const [ThemeChangerComponent()],
       ),
-      body: Center(
-        child: Container(),
+      body: Column(
+        children: [
+          ActivityCardWidget(activity: activities[0]),
+          ActivityCardWidget(activity: activities[1]),
+          ActivityCardWidget(activity: activities[2]),
+        ],
       ),
     );
   }
