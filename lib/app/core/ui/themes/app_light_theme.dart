@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:masterclass_presentation/app/core/utils/themes/app_base_theme.dart';
-import 'package:masterclass_presentation/app/core/utils/themes/app_colors.dart';
+import 'app_base_theme.dart';
+import 'app_colors.dart';
 
 class AppLightTheme {
   AppLightTheme._();
