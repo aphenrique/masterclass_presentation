@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:masterclass_presentation/app/core/components/theme_changer_component.dart';
-import 'package:masterclass_presentation/app/core/utils/images/app_images.dart';
+import '../../core/components/theme_changer_component.dart';
+import '../../core/ui/images/app_images.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
